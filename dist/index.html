@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>Task 1</title>
+<script defer src="main.js"></script></head>
+<body>
+    <header class="header-notes">
+        <div>
+            <p>Name</p>
+        </div>
+        <div>
+            <p>Created</p>
+        </div>
+        <div>
+            <p>Category</p>
+        </div>
+        <div>
+            <p>Content</p>
+        </div>
+        <div>
+            <p>Dates</p>
+        </div>
+        <div class="icons-header">
+            <div class="archive-icon">
+                <img src="images/archive-22af1f62feb0f6d86c72.svg" alt="archive">
+            </div>
+            <div class="trash-icon">
+                <img src="images/trash-18d967047ce8e906d570.svg" alt="trash">
+            </div>
+        </div>
+    </header>
+
+    <div class="notes">
+    </div>
+
+    <button class="button-note-create">Create note</button>
+
+    <form class="hide note-form">
+        <input id="note-form-name" placeholder="Note name" type="text">
+        <input id="note-form-content" placeholder="Note content" type="text">
+        <select name="form-category" id="note-form-category">
+            <option value="task">Task</option>
+            <option value="thought">Random Thought</option>
+            <option value="idea">Idea</option>
+            <option value="quote">Quote</option>
+        </select>
+        <button type="submit">Submit form</button>
+    </form>
+
+    <div class="summary">
+        <div class="header-summary">
+            <div>Note Category</div>
+            <div>Active</div>
+            <div>Archived</div>
+        </div>
+        <div class="summary-inner"></div>
+    </div>
+    <script type="importmap">
+        {
+          "imports": {
+            "uuid": "https://cdn.skypack.dev/uuid"
+          }
+        }
+      </script>
+    <script type="module" src="9a47f5d5555152cc11f0.js"></script>
+</body>
+</html>
